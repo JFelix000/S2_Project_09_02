@@ -13,4 +13,9 @@
 
 
 /* Validation Styles */
-
+input:focus:not([type='radio']) {
+    background: rgb(255, 218, 165);
+}
+input:focus:not([type='radio']) {
+    background: rgb(255, 245, 215) url(sb_valid.png) no-repeat;
+}

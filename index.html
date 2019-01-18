@@ -159,12 +159,29 @@
 
         <label for="cardMonth">Expiration Date</label>
         <select name="monthList" id="monthList" required>
-            <option value=""></option>
+            <option value="1">January (1)</option>
+            <option value="2">February (2)</option>
+            <option value="3">March (3)</option>
+            <option value="4">April (4)</option>
+            <option value="5">May (5)</option>
+            <option value="6">June (6)</option>
+            <option value="7">July (7)</option>
+            <option value="8">August (8)</option>
+            <option value="9">September (9)</option>
+            <option value="10">October (10)</option>
+            <option value="11">November (11)</option>
+            <option value="12">December (12)</option>
         </select>
 
-    </fieldset>
+            <label for="cscBox">CSC</label>
+            <input type="text" name="cscBox" pattern="^\d{3}$" maxlength="3" placeholder="nnn">
 
-    </form>
+            
+    </fieldset>
+    
+    <button type="submit"><img src="sb_button.png" alt="Next"></button>
+    
+</form>
       <aside>
          <h1>Menu Ideas</h1>
          <h2>Salt-Roasted Pecans</h2>
