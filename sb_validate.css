@@ -13,9 +13,11 @@
 
 
 /* Validation Styles */
+/* You need to style the input tag that is focused and not type=radio so the backgrounds change(basically avoiding all of the credit card options). The invalid.png is to bring up the red x styles.*/
 input:focus:not([type='radio']) {
-    background: rgb(255, 218, 165);
+    background: rgb(255, 218, 165) url(sb_invalid.png) no-repeat right;
 }
+/* The background has an image that is inserted when it is a valid selection and it is pulled in via the url. no-repeat is for no tiling and right is to keep it on the right side and away from all of the other text. */
 input:focus:not([type='radio']) {
-    background: rgb(255, 245, 215) url(sb_valid.png) no-repeat;
+    background: rgb(255, 245, 215) url(sb_valid.png) no-repeat right;
 }

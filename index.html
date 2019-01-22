@@ -29,7 +29,7 @@
       <img src="sb_logo.png" alt="The Spice Bowl" />
 
     <form method="POST" action="http://www.example.com/sb/login" id="login">
-
+<!-- The inputs have ids so they follow up on the rest of the code. The name is corresponding to the form naturally -->
         <input type="text" name="username" id="userBox"  placeholder="username" />
 
         <input type="text" name="password" id="pwdBox" placeholder="password" />
@@ -51,9 +51,9 @@
       <form action=" http://www.example.com/sb/payment" method="POST" id="payment">
     <fieldset id="billing">
         <legend>Billing Information (required)</legend>
-
+<!-- Every one of these inputs have a label and the for is the same as the name within the input-->
         <label for="fName">First Name</label>
-        <input type="text" required>
+        <input type="text"  name="fName" required>
 
         <label for="lName">Last Name</label>
         <input type="text" name="lName" id="lastBox" required>
@@ -66,7 +66,7 @@
 
         <label for="city">City</label>
         <input type="text" name="city" id="cityBox" required>
-
+<!-- Since the abbreviations work for both the user to see and the coder to organize, the option tag is self closing and it contains only a value. In a datalist, the option value is clickable by default and appear once the section is clicked. -->
         <label for="stateBox">State</label>
         <input type="text" name="state" id="stateBox" list="stateList" required>
         <datalist id="stateList">
@@ -121,7 +121,7 @@
                 <option value="WI" />
                 <option value="WY" />
         </datalist>
-
+        <!-- The pattern is given directly in the instructions so the pattern is always started with a ^ and it ends with a $. -->
         <label for="zip">Zip/Postal Code</label>
         <input type="text" name="zip" id="zipBox" pattern=" ^\d{5}(-\d{4})?$ " />
 
@@ -137,6 +137,7 @@
     <fieldset id="creditCard">
         <legend>Credit Card (required)</legend>
         <fieldset>
+            <!-- I put the inputs and image in the label so that the credit cards would get the highlighted styles under the label tag in the already existing code. Then, I put all the types to radio so they are a bubble form of clicking. I have the id for both the image and the input in case of css styling fixes. Then I put them all under required so that the form can't be submitted without the selection. -->
             <label class="cardLabel" for="cCard">
                 <input type="radio" id="amex" required>
                 <img src="sb_amex.png" id="amex">
@@ -178,9 +179,10 @@
 
             
     </fieldset>
+    <!-- The button has a type of submit and the image source is for the look of the button. The alt is where I can put the text to be shown on the image and in this case it is next. -->
     
     <button type="submit"><img src="sb_button.png" alt="Next"></button>
-    
+    <!-- This was already here -->
 </form>
       <aside>
          <h1>Menu Ideas</h1>
